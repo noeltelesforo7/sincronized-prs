@@ -1,0 +1,33 @@
+name: Auto-add PR to project
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+    branches:
+      - dev
+      - qa
+      - staging
+      - main
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: auto-add-pr-to-project-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  add-pr-to-project:
+    if: ${{ github.event.pull_request.draft == false }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add pull request to project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: https://github.com/users/AlejandroCrispinDJ/projects/5
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
