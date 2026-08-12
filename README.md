@@ -1,1 +1,1 @@
-# sincronized-prs
+Prueba de automatización para GitHub Project
