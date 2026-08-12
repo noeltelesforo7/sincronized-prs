@@ -1,4 +1,2 @@
 
-# sincronized-prs test in qa
-Prueba de automatización para GitHub Project
-
+Prueba de automatización para GitHub Project de stagin a main
