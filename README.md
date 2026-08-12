@@ -1,1 +1,1 @@
-# sincronized-prs
+# sincronized-prs-auto
