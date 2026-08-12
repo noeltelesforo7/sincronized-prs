@@ -1,1 +1,1 @@
-# sincronized-prs
+# sincronized-prs test in qa
