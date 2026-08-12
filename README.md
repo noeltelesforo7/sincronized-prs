@@ -1,2 +1,2 @@
 
-Prueba de automatización para GitHub Project de stagin a main
+Prueba de automatización para GitHub Project de test-staging hacia staging
